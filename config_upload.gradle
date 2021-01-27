@@ -1,0 +1,31 @@
+ext {
+    repositoryConfig = [
+            userName : "admin",
+            password : "fjkind",
+            urlRelease : "http://192.168.0.29:8081/repository/kind-android-release/",
+            urlSnapshot : "http://192.168.0.29:8081/repository/kind-android-snapshots/"
+    ]
+
+    mavenConfig = [
+            pomName : "KindPictureSelector",
+            pomReleaseVersion : "2.6-RELEASE",//release版本
+            pomSnapshotsVersion : "2.6-SNAPSHOT",//Snapshots版本
+            pomGroupId : "cn.com.kind",
+            pomAritfaceId : "kindpictureselector",
+            pomPackageing : "aar",
+            pomDescription : "图片选择框架",
+            pomUploadType : "SNAPSHOT" //RELEASE 、SNAPSHOT
+    ]
+
+    mavenConfigUcrop = [
+            pomName : "KindUcrop",
+            pomReleaseVersion : "2.6-RELEASE",//release版本
+            pomSnapshotsVersion : "2.6-SNAPSHOT",//Snapshots版本
+            pomGroupId : "cn.com.kind",
+            pomAritfaceId : "kinducrop",
+            pomPackageing : "aar",
+            pomDescription : "图片裁剪框架",
+            pomUploadType : "SNAPSHOT" //RELEASE 、SNAPSHOT
+    ]
+
+}
